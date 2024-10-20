@@ -1,0 +1,30 @@
+@import './variables'; 
+
+h1 {
+  color: $text-display;
+  font-size: 2.5rem; 
+}
+
+p {
+  color: $text-secondary;
+  font-size: 1.1rem; 
+}
+
+@font-face {
+  font-family: 'Tajawal';
+  src: url('../assets/fonts/Tajawal/Tajawal-Medium.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+html{
+  scroll-behavior: smooth;
+
+}
+
+body {
+    font-family: 'Tajawal', sans-serif !important;
+    direction: rtl;
+    padding: 0;
+
+  }

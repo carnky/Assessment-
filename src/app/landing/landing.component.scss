@@ -1,0 +1,164 @@
+@import '../../styles/variables';
+
+.hero{
+
+    background-color:#EFF3F8;
+height:  714px;
+    
+    &::before {
+        content: '';
+        position: absolute;
+        width: 244.34px;
+        height: 570.95px;
+        top: 100px;
+        left: 4px;
+        background-image: url('/assets/img/img-ba-l.png');
+        background-size: cover;
+        background-position: center;
+        opacity: 0.9; 
+        z-index: -1;
+     }
+     
+     &::after {
+        content: '';
+        position: absolute;
+        width: 244.34px;
+        height: 570.95px;
+        top: 100px;
+        right: 4px; 
+        opacity: 0.9; 
+        background-image: url('/assets/img/img-bar.png'); 
+        background-size: cover;
+        background-position: center;
+        z-index: -1;
+     }
+       h1{
+   
+           font-size: 72px;
+           color: #1B8354;
+       }
+   
+       animation: fadeIn 2s ease-in-out forwards; 
+   
+       .hero-img {
+        width: 100%; 
+        max-width: 780px; 
+        height: auto; 
+        margin: 0 auto; 
+    }
+   }
+   
+.main{
+
+    background: #fafaff;
+
+
+    .about{
+        padding-top:128px;
+
+        .info {
+            margin-bottom: 30px; 
+
+            h5{
+                color: #6C737F;
+                font-size: 16px;
+                margin-top: 5px;
+            }
+
+            .about-img {
+                width: 100%; 
+                max-width: 500px; 
+                height: auto;
+                margin: 0 auto; 
+            }
+           
+          }
+    }
+
+
+    .features {
+
+        .card {
+            padding: 50px;
+            border: 0;
+            border-radius: 10px;
+            margin: 20px;
+            background-color: #ffffff; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s ease-in-out; 
+        }
+        
+  
+        
+        .card:hover {
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+        }
+        
+    }
+
+    .contact{
+       
+margin-top: 50px;
+
+        .background{
+            background-color: #F3FFF8; 
+            border-radius: 14px;
+            border: 1px solid #E5EBEF; 
+        
+        }
+
+        .info-contact{
+            p{
+                color: #1B8354;
+                
+            }
+        }
+}
+
+}
+
+
+
+.hero-img, .about-img, .contact-icon {
+    width: 100%;
+    height: auto; 
+}
+
+@media (max-width: 768px) {
+    .hero {
+        height: auto; 
+    }
+
+    .about {
+        padding-top: 50px;
+    }
+
+    .features .card {
+        margin: 15px 0; 
+    }
+
+    .contact .background {
+        padding: 20px; 
+    }
+}
+
+
+
+
+
+
+
+
+
+
+   
+   @keyframes fadeIn {
+       0% {
+           opacity: 0; 
+           transform: translateY(50px); 
+       }
+       100% {
+           opacity: 1; 
+           transform: translateY(0); 
+       }
+   }

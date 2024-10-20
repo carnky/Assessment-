@@ -1,0 +1,11 @@
+// Color Variables
+$background-primary: #1B8354;
+$background-secondary: #F3FFF8;
+$background-tertiary: #D5E1ED;
+
+// Text Color Variables
+$text-display: #1F2A37;
+$text-secondary: #8794BA;
+
+// General
+$body-background: var(--Background-background-primary, $background-primary)

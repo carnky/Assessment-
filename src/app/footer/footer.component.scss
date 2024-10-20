@@ -1,0 +1,52 @@
+.footer {
+    background-color: #004733; 
+    color: #ffffff; 
+    padding: 40px 0; 
+
+  }
+  
+  .footer a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #999; 
+  }
+  .social-icons a{
+    border: 0;
+  }
+  .footer a:hover {
+    text-decoration: underline; 
+  }
+  
+  .footer h5 {
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .footer .social-icons a {
+    margin: 0 10px;
+  }
+  
+  .footer .social-icons img {
+    width: 40px; 
+    height: 40px;
+  }
+  
+  .footer p {
+    font-size: 14px;
+    margin-top: 30px;
+    color: #ccc;
+  }
+  
+
+  .footer .row.text-center div {
+    border-bottom: 1px solid #999; 
+  }
+  
+  .footer .row.text-center div:last-child {
+    border-right: none; /* إزالة الخط من العمود الأخير */
+  }
+  

@@ -1,0 +1,42 @@
+<div class="container-fluid p-0">
+  <div class="row">
+    <div class="col-md-6 d-none d-md-block p-0">
+      <img class="img-fluid full-height" src="assets/img/" alt="صورة م" />
+    </div>
+
+    <div
+      class="col-md-6 d-flex align-items-center justify-content-center background"
+    >
+      <div class="login-form">
+        <h1 class="mb-4">تسجيل الدخول</h1>
+        <form>
+          <div class="mb-3">
+            <label for="email" class="form-label">رقم الهوية</label>
+            <input
+              type="id"
+              class="form-control"
+              id="email"
+              placeholder="ادخل رقم الهوية الخاصة بك"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="password" class="form-label">كلمة المرور</label>
+            <input
+              type="password"
+              class="form-control"
+              id="password"
+              placeholder="أدخل كلمة المرور"
+            />
+          </div>
+        </form>
+        <button
+          (click)="navigateToDashboard()"
+          type="button"
+          class="btn btn-success w-100 d-flex align-items-center justify-content-center"
+        >
+          <span class="me-2">←</span> تسجيل دخول
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
