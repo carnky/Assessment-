@@ -22,6 +22,10 @@ export const routes: Routes = [
     path: 'dashboard',
     component: HomeComponent,
     children: [
+      // Usually the purpose of having a child route is to
+      // render it in the parent route. Your 'violation' route
+      // will only be rendered in 'dashboard' if
+      // the <router-outlet> is used inside the HomeComponent
       { path: 'violation', component: ViolationDashboardComponent }
     ]
   }
