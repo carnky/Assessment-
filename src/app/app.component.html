@@ -1,5 +1,11 @@
-<div *ngIf="showHeaderFooter"></div>
+<!-- It is just an FYI even though this part has no effect at your UI: -->
+<!-- the 'modern' way to use if statements in Angular templates is to use the @ syntax -->
+@if (showHeaderFooter) {
+  <div></div>
+}
 
 <router-outlet></router-outlet>
 
-<div *ngIf="showHeaderFooter"></div>
+@if (showHeaderFooter) {
+  <div></div>
+}
