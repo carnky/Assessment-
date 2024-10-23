@@ -1,1 +1,84 @@
-<p dir="ltr">Yes, I'm the violation component 👋🏻</p>
+<main class="main">
+  <div class="violation container">
+    <section class="totle mt-5">
+      <div class="col-md-12 d-flex align-items-center">
+        <img src="assets/img/base.png" alt=" ايقونه " class="hero-img me-3" />
+        <div class="d-flex flex-column text-center me-2">
+          <p class="mb-0">اجمالي</p>
+          <h5 class="mb-0">555</h5>
+        </div>
+      </div>
+    </section>
+    <section class="map mt-5 p-5">
+      <h3>خريطتي التفاعلية</h3>
+      <p>يمكنك استعراض التفاصيل في كافة أنحاء خريطة مناطق المملكة</p>
+      <div id="map" style="width: 100%; height: 500px"></div>
+      <!-- هذا هو العنصر الذي ستظهر فيه الخريطة -->
+    </section>
+
+    <section class="chart mt-5 p-1">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card">
+            <h3>عنوان رئيسي</h3>
+            <img
+              src="assets/img/line-chart-example.svg"
+              alt=" رسم توضيحي "
+              class="hero-img me-3"
+            />
+            <hr />
+            <div class="card-body">
+              <div class="info-card-chart d-flex justify-content-between">
+                <p>الرياض</p>
+                <p>66</p>
+              </div>
+              <div class="info-card-chart d-flex justify-content-between">
+                <p>الرياض</p>
+                <p>66</p>
+              </div>
+              <div class="info-card-chart d-flex justify-content-between">
+                <p>الرياض</p>
+                <p>66</p>
+              </div>
+              <div class="info-card-chart d-flex justify-content-between">
+                <p>الرياض</p>
+                <p>66</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card">
+            <h3>عنوان رئيسي</h3>
+            <img
+              src="assets/img/line-chart-example.svg"
+              alt=" رسم توضيحي "
+              class="hero-img me-3"
+            />
+            <hr />
+            <div class="card-body">
+              <div class="info-card-chart d-flex justify-content-between">
+                <p>الرياض</p>
+                <p>66</p>
+              </div>
+              <div class="info-card-chart d-flex justify-content-between">
+                <p>الرياض</p>
+                <p>66</p>
+              </div>
+              <div class="info-card-chart d-flex justify-content-between">
+                <p>الرياض</p>
+                <p>66</p>
+              </div>
+              <div class="info-card-chart d-flex justify-content-between">
+                <p>الرياض</p>
+                <p>66</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <router-outlet></router-outlet>
+  </div>
+</main>

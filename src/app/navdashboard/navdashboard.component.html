@@ -22,9 +22,9 @@
         >
           <a
             class="nav-link d-flex align-items-center mr-3"
-            [href]="item.link"
-            [class.active]="item.link === activeLink"
+            [routerLink]="item.link"
             (click)="setActive(item.link)"
+            [class.active]="activeLink === item.link"
           >
             <img [src]="item.icon" alt="Logo" class="nav-icon ms-1" />
             {{ item.title }}

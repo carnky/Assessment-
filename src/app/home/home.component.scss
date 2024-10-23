@@ -1,7 +1,6 @@
-/* التصميم الأساسي */
 .main {
     background-color: #f6f6fb;
-    min-height: 100vh;
+    min-height: 85vh;
     padding: 30px 0;
   }
   
@@ -25,10 +24,16 @@
     text-align: center;
   }
   
+
+  .Quick{
+    .card {
+      width: 100%;
+      max-width: 195.28px;
+      height: 167.69px;
+    }
+  }
   .card {
-    width: 100%;
-    max-width: 195.28px;
-    height: 167.69px;
+  
     border-radius: 4px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
@@ -82,9 +87,13 @@
   
     .report .headr {
       width: 100%; 
+
+      .card{
+        width: 220px;
+      }
     }
   
-   
+
   
     .justify-content-between {
       justify-content: flex-start; 

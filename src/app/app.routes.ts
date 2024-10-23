@@ -4,10 +4,17 @@ import { SignInComponent } from './sign-in/sign-in.component';
 import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
 import { HomeComponent } from './home/home.component';
 import { ViolationDashboardComponent } from './violation-dashboard/violation-dashboard.component';
+import { DashboardLayoutComponent } from './layouts/dashboard-layout/dashboard-layout.component'; // التأكد من استيراد DashboardLayoutComponent بشكل صحيح
+
 
 export const routes: Routes = [
   {
     path: '',
+    redirectTo: 'landing',
+    pathMatch: 'full'
+  },
+  {
+    path: 'landing',
     component: LandingComponent
   },
   {
@@ -19,14 +26,11 @@ export const routes: Routes = [
     component: ForgotPasswordComponent
   },
   {
-    path: 'dashboard',
-    component: HomeComponent,
+    path: '',
+    component: DashboardLayoutComponent,
     children: [
-      // Usually the purpose of having a child route is to
-      // render it in the parent route. Your 'violation' route
-      // will only be rendered in 'dashboard' if
-      // the <router-outlet> is used inside the HomeComponent
-      { path: 'violation', component: ViolationDashboardComponent }
+      { path: 'home', component: HomeComponent },
+      { path: 'home/violation', component: ViolationDashboardComponent }
     ]
   }
 ];
